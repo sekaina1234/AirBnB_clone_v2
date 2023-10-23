@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.teardown_appcontext
 def remove_session(exception):
-    """ After each request, it removes the current SQLAlchemy Session """
+    """ After each request it removes the current SQLAlchemy Session """
     storage.close()
 
 
