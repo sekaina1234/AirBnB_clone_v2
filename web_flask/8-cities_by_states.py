@@ -15,7 +15,7 @@ def remove_session(exception):
 
 @app.route('/cities_by_states', strict_slashes=False)
 def render_state_cities():
-    """ displays all states and their cities """
+    """ displays all state and their cities """
     States = storage.all(State).values()
     return render_template("8-cities_by_states.html", States=States)
 
