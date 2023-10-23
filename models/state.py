@@ -17,7 +17,7 @@ class State(BaseModel, Base):
 
     @property
     def cities(self):
-        """  getter attribute cities that returns the list of
+        """  gette attribute cities that returns the list of
         City instances with state_id equals to the current State.id """
         from models import storage
         allcities = storage.all(City)
