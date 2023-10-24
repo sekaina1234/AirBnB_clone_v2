@@ -15,7 +15,7 @@ def remove_session(exception):
 
 @app.route('/states', strict_slashes=False)
 def render_states():
-    """ displays all states """
+    """ displays all state """
     States = storage.all(State).values()
     return render_template("9-states.html", States=States, one=None)
 
